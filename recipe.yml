@@ -34,7 +34,7 @@ stages:
     type: shell
     commands:
     - apt remove -y wpasupplicant
-    - apt install iwd
+    - apt install -y iwd
 
   # Put your custom actions before this comment
 

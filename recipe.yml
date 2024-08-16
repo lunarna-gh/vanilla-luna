@@ -22,19 +22,19 @@ stages:
     - apt-get update
 
   # Put your custom actions behind this comment
+  
+  - name: luna-commands
+    type: shell
+    commands:
+    - apt remove -y wpasupplicant
 
   - name: luna-packages
     type: apt
     source:
       packages:
+        - iwd
         - gnome-tweaks
         - firewall-config
-
-  - name: iwd
-    type: shell
-    commands:
-    - apt remove -y wpasupplicant
-    - apt install -y iwd
 
   # Put your custom actions before this comment
 

@@ -36,6 +36,7 @@ stages:
         - gnome-tweaks
         - firewall-config
         - python3-pygit2
+        - sysprof
 
   # Put your custom actions before this comment
 
